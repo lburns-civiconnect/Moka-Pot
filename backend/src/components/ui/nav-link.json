@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ui_nav_links",
+  "info": {
+    "displayName": "Nav Link",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "subLinks": {
+      "displayName": "Sub Nav Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.sub-nav-link"
+    }
+  }
+}

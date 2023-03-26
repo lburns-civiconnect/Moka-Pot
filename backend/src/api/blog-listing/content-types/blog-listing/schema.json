@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_listings",
+  "info": {
+    "singularName": "blog-listing",
+    "pluralName": "blog-listings",
+    "displayName": "Blog Listing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "featuredPost": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-post.blog-post"
+    },
+    "radioTags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tags"
+    },
+    "blog_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-post.blog-post"
+    },
+    "headingTags": {
+      "type": "string"
+    }
+  }
+}

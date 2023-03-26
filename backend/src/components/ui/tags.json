@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ui_tags",
+  "info": {
+    "displayName": "tags",
+    "icon": "info"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "required": true,
+      "default": "TAG"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_ui_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

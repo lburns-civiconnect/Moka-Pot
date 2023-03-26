@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_sub_nav_links",
+  "info": {
+    "displayName": "Sub Nav Link",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

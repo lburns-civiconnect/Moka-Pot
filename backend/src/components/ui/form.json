@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ui_forms",
+  "info": {
+    "displayName": "form",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false,
+      "default": "First and Last"
+    },
+    "yourMessage": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

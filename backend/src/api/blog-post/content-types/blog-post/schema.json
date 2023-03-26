@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "Blog Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "PLACEHOLDER TITLE PLACEHOLDER TITLE"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "coverPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "blog_posts"
+    },
+    "date": {
+      "required": true,
+      "type": "date",
+      "default": "2022-10-01"
+    },
+    "tags": {
+      "displayName": "tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tags",
+      "required": false,
+      "max": 3,
+      "min": 1
+    }
+  }
+}
